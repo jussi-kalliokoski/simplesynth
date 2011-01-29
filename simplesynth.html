@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple synth using the audio api</title>
+		<script src="audiodevice.js"></script>
+		<script src="osc.js"></script>
+		<script src="simplesynth.js"></script>
+		<link rel="stylesheet" href="simplesynth.css" />
+	</head>
+	<body>
+		<label for="waveshape">Waveshape</label><br />
+		<select id="waveshape">
+			<option value="0" selected="selected">Sine</option>
+			<option value="1">Triangle</option>
+			<option value="2">Pulse</option>
+			<option value="3">Sawtooth</option>
+			<option value="4">Invert Sawtooth</option>
+			<option value="5">Square</option>
+		</select>
+		<iframe id="keyboard" src="virtualmidikb/index.html"></iframe>
+	</body>
+</html>
